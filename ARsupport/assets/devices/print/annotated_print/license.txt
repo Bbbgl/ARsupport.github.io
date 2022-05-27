@@ -1,0 +1,11 @@
+Model Information:
+* title:	B223XX
+* source:	https://sketchfab.com/3d-models/b223xx-85db4eca5375497181818b8c80155618
+* author:	hoshizorista (https://sketchfab.com/hoshizorista)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "B223XX" (https://sketchfab.com/3d-models/b223xx-85db4eca5375497181818b8c80155618) by hoshizorista (https://sketchfab.com/hoshizorista) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
