@@ -77,7 +77,7 @@ AFRAME.registerComponent('clicker3', {
                 //element.removeAttribute('gltf-model');
                 //immagine.parentNode.appendChild(immagine); //questo elimina l'oggetto --> provo a instanziare tutti gli oggetti e li rimuovo poi
                 element.setAttribute('animation-mixer', 'clip:Open Tray')
-                alert('porcamadonna')
+                
             }
 
             if ((ink_level_device > 10) && (message_device=="Warning: internal error")) {
