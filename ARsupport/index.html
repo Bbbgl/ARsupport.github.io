@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<script src="fetch-sensor-1.js"></script>
+<script src="fetch-sensor-2.js"></script>
+<script src="fetch-sensor-3.js"></script>
+<script src="gesture-handler.js"></script>
+<script src="gesture-detector.js"></script>
+<script src="clickers.js"></script>
+<!-- per animation: -->
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
+
+<!-- model viewer -->
+<!-- <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script> -->
+
+
+
+
+   <style>
+    @import url(tablestyle.css);
+  </style> 
+</head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<body style="margin :0px; overflow: hidden;">
+
+  <!-- <div id="managerTable" > -->
+
+  <table class="blueTable">
+   
+    
+    <tr>
+    <td colspan="2">
+    
+    </td>
+    </tr>
+    
+    <tbody>
+    <tr>
+    <td>sid</td><td><span id="myDevice"></span></td></tr>
+    <tr>
+    <td>type</td><td><span id="myType"></span></td></tr>
+    <tr>
+    <td>name</td><td><span id="myName"></span></td></tr>
+    <tr>
+    <td>room</td><td><span id="myRoom"></span></td></tr>
+    <tr>
+    <td>time</td><td><span id="myTime"></span></td></tr>
+    <tr>
+    <td><span id="measure"></span></td><td><span id="myMeasure"></span></td></tr>
+    <tr>
+    <td><span id="measure2"></span></td><td><span id="myMeasure2"></span></td></tr>
+    <tr>
+    <td><span id="measure3"></span></td><td><span id="myMeasure3"></span></td></tr>
+    <tr>
+      <td><span id="InkLevel"></span></td><td><span id="myInkLevel"></span></td></tr>
+
+    </tbody>
+    </tr>
+    </table>
+    <!-- </div> -->
+    <a-scene
+    arjs
+    embedded
+    renderer="logarithmicDepthBuffer: true;"
+    vr-mode-ui="enabled: false"
+    gesture-detector
+    id="scene"
+    
+  >
+  <a-assets>
+      <a-asset-item
+        id="asset1"
+        src="https://raw.githubusercontent.com/nicolocarpignoli/location-based-ar-tutorial/master/static-places/assets/magnemite/scene.gltf"
+        >
+        <!-- "https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/last_print_glb.glb" -->
+      </a-asset-item>
+      <a-asset-item
+        id="asset2"
+        src="https://raw.githubusercontent.com/nicolocarpignoli/location-based-ar-tutorial/master/static-places/assets/dragonite/scene.gltf"
+        
+      >
+      </a-asset-item>
+<!-- !!!  -->
+      <!-- <a-asset-item
+        id="asset3"
+        src="assets/devices/prova_stampante_glb.glb"  
+        
+      >
+      </a-asset-item> -->
+
+    </a-assets>
+
+
+<!-- start temperature scene -->
+    <a-marker
+      preset='custom'
+      type='pattern'
+      url='assets/markers/pattern-temperature_icon.patt'
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerA"
+      sensor1
+    >
+      <a-entity
+        id="entity1"
+        gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/temperature/conditioning/scene.gltf"
+        scale="0.01 0.01 0.01"
+        class="clickable"
+        rotation="-36.335264493811415 9.48703517177617 -15.658363583130267"
+        clicker1
+        gesture-handler
+        animation-mixer="clip:Cylinder.001|Cylinder.001Action"
+      >
+      </a-entity>
+      <!-- <a-entity id="entity1" gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/temperature/conditioning/scene.gltf" scale="0.01 0.01 0.01" class="clickable" rotation="-36.335264493811415 9.48703517177617 -15.658363583130267" clicker1="" gesture-handler="" animation-mixer="clip: Cylinder.001|Cylinder.001Action">
+      </a-entity> -->
+
+      <!-- <model-viewer bounds="tight" enable-pan src="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/temperature/airconditioner_commands_glb.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+        <button class="Hotspot" slot="hotspot-1" data-position="1.051141431337222m 0.010797756190322971m 0.9786667235267092m" data-normal="0.6867007234524727m -0.019854125838036685m 0.7266690650475346m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">TAP HERE TO COOLING</div>
+        </button> -->
+        <!-- <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png"> -->
+        </div>
+    </model-viewer>
+    
+
+      <!-- <a-image id = "immagineprova1" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg" scale="0.002 0.002 0.002" ></a-image> -->
+    
+    </a-marker>
+<!-- end temperature scene -->
+
+
+
+<!-- inizio pressure scena -->
+    <a-marker
+      preset='custom'
+      type='pattern'
+      url='assets/markers/pattern-pressure_icon.patt'
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerB"
+      sensor2
+    >
+      <a-entity
+        id="entity2"
+        gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/pressure/scene.gltf"
+        position="0 0 0"
+        scale=""
+        class="clickable"
+        rotation="-65.6844545915927 25.454795964277082 -13.34819775316279"
+        clicker2
+        gesture-handler
+      >
+      </a-entity>
+
+      <!-- <a-image id = "immagineprova2" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"  scale="0.002 0.002 0.002" ></a-image> -->
+    
+    </a-marker>
+
+
+    <!-- inizio print scena -->
+    <a-marker
+      preset='custom'
+      type='pattern'
+      url='assets/markers/pattern-print_icon.patt'
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerC"
+      sensor3
+    >
+      <a-entity
+        id="entity3"
+        gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf"
+        position="0.80293 -0.01835 -0.11365"
+        scale=""
+        rotation="-21.958034540593673 -94.13295503542834 66.51123268996649"
+        class="clickable"
+        clicker3
+        gesture-handler
+        animation-mixer="clip:Static Pose"
+        
+      >
+      </a-entity>
+      <!-- <a-entity id="entity3" gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf" position="0.80293 -0.01835 -0.11365" scale="" rotation="-21.958034540593673 -94.13295503542834 66.51123268996649" class="clickable" clicker3="" gesture-handler="" animation-mixer="clip: Open Front Door">
+      </a-entity>
+       -->
+      
+      <!-- <a-entity id="entity3" gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf"   class="clickable" clicker3="" gesture-handler="" animation-mixer="clip: Open Front Door"> attributi presi dall'inspector -->
+       
+      <!-- <a-image id = "immagineprova3" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"  scale="0.002 0.002 0.002" ></a-image> -->
+    
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+    
+
+   
+
+</html>
