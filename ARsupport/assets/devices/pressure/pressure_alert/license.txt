@@ -1,0 +1,11 @@
+Model Information:
+* title:	CO2 Gas Cylinder
+* source:	https://sketchfab.com/3d-models/co2-gas-cylinder-6eb946fae3d84eaea2f1dd47647f4da8
+* author:	Stainless Reality (https://sketchfab.com/StainlessReality)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "CO2 Gas Cylinder" (https://sketchfab.com/3d-models/co2-gas-cylinder-6eb946fae3d84eaea2f1dd47647f4da8) by Stainless Reality (https://sketchfab.com/StainlessReality) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
