@@ -11,12 +11,11 @@ AFRAME.registerComponent('clicker2', {
             // è necessario inizializzare un valore sennò non funziona il primo clicker
             if ((pressure_device > 1000)) {
 
-                //element.removeAttribute('gltf-model');
-                // prima c'era remove attribute per togliere il gltf
+                
                 element.setAttribute('gltf-model', "https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/pressure/pressure_alert/scene.gltf");
-                //immagine.parentNode.appendChild(immagine); //questo elimina l'oggetto --> provo a instanziare tutti gli oggetti e li rimuovo poi
-                // element.setAttribute('scale', '10 10 10')
-                // element.setAttribute('position', '0 0 -1')
+                element.setAttribute('scale','1.2 1.2 1.2');
+               
+
                 element.setAttribute('animation-mixer','clip:Action' )
                 document.getElementById("myInstruction").innerHTML = "Hold the button";
                 
