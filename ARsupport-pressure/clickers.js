@@ -1,4 +1,4 @@
-pressure_device='pressure'//senno non funziona
+pressure_device='pressure'
 
 
 AFRAME.registerComponent('clicker2', {
