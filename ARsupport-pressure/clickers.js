@@ -17,7 +17,7 @@ AFRAME.registerComponent('clicker2', {
                
 
                 element.setAttribute('animation-mixer','clip:Action' )
-                document.getElementById("myInstruction").innerHTML = "Hold the button";
+                document.getElementById("myInstruction").innerHTML = "Switch the valve";
                 
                 //immagine.parentNode.appendChild(immagine); //questo elimina l'oggetto --> provo a instanziare tutti gli oggetti e li rimuovo poi
                 //immagine.setAttribute('scale', '2 2 2')
