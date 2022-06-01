@@ -14,7 +14,7 @@ AFRAME.registerComponent('clicker2', {
                 
                 element.setAttribute('gltf-model', "https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/pressure/pressure_alert/scene.gltf");
                 element.setAttribute('scale','1.2 1.2 1.2');
-                element.setAttribute('position','0 1 0')
+                element.setAttribute('position','0 -3 0')
                
 
                 element.setAttribute('animation-mixer','clip:Action' )
