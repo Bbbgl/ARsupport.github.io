@@ -1,5 +1,3 @@
-
-
 pressure_device='pressure'//senno non funziona
 
 
