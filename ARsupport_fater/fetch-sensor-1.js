@@ -1,0 +1,98 @@
+AFRAME.registerComponent('sensor1', {
+  init: function () {
+    this.el.addEventListener('markerFound', () => {
+
+  
+
+
+      fetch("https://kdmg.dii.univpm.it/iot/mobile/ar/example/query.php?sid=1")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+          id_device = data.sid;
+          type_device = data.type;
+          name_device = data.name;
+          room_device = data.room;
+          time_device = data.timestamp;
+          measure_device = data.measure;
+          uom_device = data.uom;
+          temperature_device = data.value;
+          console.log(temperature_device)
+          // message_device="assente"
+          
+          
+
+
+
+          document.getElementById("myDevice").innerHTML = id_device;
+          document.getElementById("myType").innerHTML = type_device;
+          document.getElementById("myName").innerHTML = name_device;
+          document.getElementById("myRoom").innerHTML = room_device;
+          document.getElementById("myTime").innerHTML = time_device;
+          document.getElementById("myMeasure").innerHTML = measure_device;
+          document.getElementById("myMeasure2").innerHTML = uom_device;
+          document.getElementById("myMeasure3").innerHTML = temperature_device;
+          //document.getElementById("myDevicesA").innerHTML = devices;
+
+        });
+
+      document.getElementById("measure").innerHTML = "measure";
+      document.getElementById("measure2").innerHTML = "uom";
+      document.getElementById("measure3").innerHTML = "temperature";
+      document.getElementById("InkLevel").innerHTML = "";
+      document.getElementById("myInkLevel").innerHTML = "";
+      
+      
+    })
+
+    /* AFRAME.registerComponent('clicker1', {
+      init: function() { 
+  
+          //const el = document.getElementById("marker1");        
+          this.el.addEventListener('click', e => {
+            var element = document.querySelector('#entity1')
+            var immagine = document.querySelector('#immagineprova1')
+            if (temperature_device > 21){
+              element.removeAttribute('gltf-model');
+              //immagine.parentNode.appendChild(immagine); //questo elimina l'oggetto --> provo a instanziare tutti gli oggetti e li rimuovo poi
+              immagine.setAttribute('scale', '2 2 2')          
+            }     
+             
+          
+  
+      })
+    }
+  });
+ */
+    this.el.addEventListener('markerLost', () => {
+
+      
+      video = document.querySelector('#videoprova');
+      video.pause()
+
+        // 3D model start again
+        //element.setAttribute('gltf-model',"https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/temperature/conditioning/scene.gltf")
+        //element.setAttribute('scale', '0.01 0.01 0.01')
+       // immagine.setAttribute('scale', '0.002 0.002 0.002')
+      //document.getElementById("myInstruction").innerHTML = "";
+
+      // id_device = 0;
+      // type_device = 0;
+      // name_device = 0;
+      // room_device = 0;
+      // time_device = 0;
+      // measure_device = 0;
+      // uom_device = 0;
+      // temperature_device = 0;
+      document.getElementById("myDevice").innerHTML = "N/A";
+      document.getElementById("myType").innerHTML = "N/A";
+      document.getElementById("myName").innerHTML = "N/A";
+      document.getElementById("myRoom").innerHTML = "N/A";
+      document.getElementById("myTime").innerHTML = "N/A";
+      document.getElementById("myMeasure").innerHTML = "N/A";
+      document.getElementById("myMeasure2").innerHTML = "N/A";
+      document.getElementById("myMeasure3").innerHTML = "N/A";
+
+    })
+  }
+});
