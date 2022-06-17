@@ -70,8 +70,8 @@ AFRAME.registerComponent('sensor', {
 this.el.addEventListener('markerLost', () => {
 
         var element = document.querySelector('#disk')
-        element.setAttribute("scale","0.01 0.01 0.01")
-        element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/disk.glb")
+        element.setAttribute("scale","1 1 1")
+        element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/white_roll.glb")
         //element.setAttribute('animation-mixer',"clip:Static Pose") //resetto con l'animazione iniziale
         //var immagine = document.querySelector('#immagineprova2')
   
