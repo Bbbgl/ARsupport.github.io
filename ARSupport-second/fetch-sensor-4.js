@@ -47,25 +47,7 @@ AFRAME.registerComponent('sensor', {
       })
 
       
-       /* AFRAME.registerComponent('clicker3', {
-    init: function() { 
-
-        //const el = document.getElementById("marker1");        
-        this.el.addEventListener('click', e => {
-          var element = document.querySelector('#entity3')
-          var immagine = document.querySelector('#immagineprova3')
-          
-          if (ink_level_device > 100){
-            element.removeAttribute('gltf-model');
-            //immagine.parentNode.appendChild(immagine); //questo elimina l'oggetto --> provo a instanziare tutti gli oggetti e li rimuovo poi
-            immagine.setAttribute('scale', '2 2 2')          
-          }     
-           
-        
-
-    })
-  }
-}); */
+     
 
 this.el.addEventListener('markerLost', () => {
 
