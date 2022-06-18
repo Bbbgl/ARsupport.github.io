@@ -29,7 +29,7 @@ AFRAME.registerComponent('sensor', {
           document.getElementById("myDevice").innerHTML = id_device;
           document.getElementById("myType").innerHTML = type_device;          
           document.getElementById("myName").innerHTML = name_device;
-          document.getElementById("myRoom").innerHTML = room_device;
+         
           document.getElementById("myTime").innerHTML = time_device;
           document.getElementById("myMeasure").innerHTML = code_device;
           
@@ -71,7 +71,7 @@ this.el.addEventListener('markerLost', () => {
       document.getElementById("myDevice").innerHTML = "N/A";
       document.getElementById("myType").innerHTML = "N/A";
       document.getElementById("myName").innerHTML = "N/A";
-      document.getElementById("myRoom").innerHTML = "N/A";
+     
       document.getElementById("myTime").innerHTML = "N/A";
       document.getElementById("myMeasure").innerHTML = "N/A";
       document.getElementById("myInstruction").innerHTML = "N/A"
