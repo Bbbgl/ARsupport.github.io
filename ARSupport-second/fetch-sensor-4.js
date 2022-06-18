@@ -52,15 +52,12 @@ AFRAME.registerComponent('sensor', {
 this.el.addEventListener('markerLost', () => {
 
       var element = document.querySelector('#disk')
-      element.setAttribute("scale","1 1 1")
+      element.setAttribute("scale","4 4 4")
       element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/plate_white.glb")
       //element.setAttribute('animation-mixer',"clip:Static Pose") //resetto con l'animazione iniziale
       //var immagine = document.querySelector('#immagineprova2')
 
-        // resetto il modello 3d iniziale
-        //element.setAttribute('gltf-model',"https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf")
-       // immagine.setAttribute('scale', '0.002 0.002 0.002')
-      
+       
 
       // id_device = 0;
       // type_device = 0;
