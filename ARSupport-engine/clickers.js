@@ -28,7 +28,7 @@
         btn4.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/throttleBody.glb")
-            element.setAttribute("scale","75 75 75")       
+            element.setAttribute("scale","7.5 7.5 7.5")       
         })
         btn5.addEventListener("click", e => {
                             
