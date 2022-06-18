@@ -52,8 +52,9 @@ AFRAME.registerComponent('sensor', {
 this.el.addEventListener('markerLost', () => {
 
       var element = document.querySelector('#disk')
-      element.setAttribute("scale","4 4 4")
+      
       element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/plate_white.glb")
+  element.setAttribute("scale","4 4 4")
       //element.setAttribute('animation-mixer',"clip:Static Pose") //resetto con l'animazione iniziale
       //var immagine = document.querySelector('#immagineprova2')
 
