@@ -18,12 +18,12 @@
         btn2.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/piston.glb")   
-            element.setAttribute("scale","150 150 150")    
+            element.setAttribute("scale","15 15 15")    
         })
         btn3.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/chain.glb") 
-            element.setAttribute("scale","150 150 150")      
+            element.setAttribute("scale","15 15 15")      
         })
         btn4.addEventListener("click", e => {
                             
