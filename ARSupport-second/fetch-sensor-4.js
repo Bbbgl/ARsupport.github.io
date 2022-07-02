@@ -6,13 +6,7 @@ AFRAME.registerComponent('sensor', {
 
  
 
-      // resetto le impostazioni iniziali, immagine invisibile e modello 3d iniziale
-    // var immagine = document.querySelector('#immagineprova3')
-    // immagine.setAttribute('scale', '0.002 0.002 0.002')
-    // var element = document.querySelector('#entity3')
-    // element.setAttribute('gltf-model',"https://raw.githubusercontent.com/nicolocarpignoli/location-based-ar-tutorial/master/static-places/assets/articuno/scene.gltf")
-// devi mettere la stampante su github e copiare il link per incollarlo qui sopra
-
+     
 
       fetch("https://kdmg.dii.univpm.it/iot/mobile/ar/example/query.php?sid=4")
         .then((response) => response.json())
@@ -54,7 +48,7 @@ this.el.addEventListener('markerLost', () => {
       var element = document.querySelector('#disk')
       
       element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/plate_white.glb")
-  element.setAttribute("scale","4 4 4")
+  element.setAttribute("scale","244 244 244")
       //element.setAttribute('animation-mixer',"clip:Static Pose") //resetto con l'animazione iniziale
       //var immagine = document.querySelector('#immagineprova2')
 
