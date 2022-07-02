@@ -72,7 +72,7 @@
 
 
 
-    <!-- inizio print scena -->
+    <!-- 
     <a-marker
       preset="hiro"
       raycaster="objects: .clickable"
@@ -80,8 +80,17 @@
       cursor="fuse: false; rayOrigin: mouse;"
       id="markerC"
       sensor
-    >
+    > -->
   
+      <a-nft
+      type="nft"
+      url="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/fater_nft/fater_sectionbis"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+
+    >
  <a-entity
     id="disk"
     gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/disk1/plate_white.glb"
@@ -93,15 +102,13 @@
     gesture-handler
   >
   </a-entity>
-      <!-- <a-entity id="entity3" gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf" position="0.80293 -0.01835 -0.11365" scale="" rotation="-21.958034540593673 -94.13295503542834 66.51123268996649" class="clickable" clicker3="" gesture-handler="" animation-mixer="clip: Open Front Door">
-      </a-entity>
-       -->
+     
       
       <!-- <a-entity id="entity3" gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/print/annotated_print/scene.gltf"   class="clickable" clicker3="" gesture-handler="" animation-mixer="clip: Open Front Door"> attributi presi dall'inspector -->
        
       <!-- <a-image id = "immagineprova3" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg"  scale="0.002 0.002 0.002" ></a-image> -->
     
-    </a-marker>
+    </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
 
