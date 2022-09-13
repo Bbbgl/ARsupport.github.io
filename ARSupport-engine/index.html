@@ -26,11 +26,17 @@
   >
     <!-- a-nft is the anchor that defines an Image Tracking entity -->
     <!-- on 'url' use the path to the Image Descriptors created before. -->
-   
+    <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     
+    <a-marker
+      preset="hiro"
+      raycaster="objects: .clickable"
+      emitevents="true"
+      cursor="fuse: false; rayOrigin: mouse;"
+      id="markerC"
       
-    
-   <a-nft
+    >
+    <!-- <a-nft
       type="nft"
       url="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/engine_nft/motor"
       smooth="true"
@@ -38,31 +44,51 @@
       smoothTolerance=".01"
       smoothThreshold="5"
 
-    > 
+    > -->
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
       <a-entity
         id="engine"
         gltf-model="https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/scene.gltf"
-        scale="250 250 250"
-        position="0 0 -3"
+        scale="5 5 5"
+        position=""
         animation-mixer="clip:Take 001"
         gesture-handler
         clicker
       >
       </a-entity>
-    
-    </a-nft>
+    </a-marker>
+    <!-- </a-nft> -->
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
   </a-scene>
-  <div class="left">
-    <button id="button1" style="margin:0.51em">1</button>
-    <button id="button2"style="margin:0.51em" ><span>2</span></button> 
-    <button id="button3" style="margin:0.51em"><span>3</span></button>
-    <button id="button4" style="margin:0.51em"><span>4</span></button>
-    <button id="button5" style="margin:0.51em"><span>5</span></button>
-    <button id="button6" style="margin:0.51em; width: 4em"><span>reset</span></button>
-  
-  </div>
+  <div class="left" >
+    <button id="button1" style="margin:1em"><span>1</span></button>
+    <button id="button2"style="margin:1em" ><span>2</span></button> 
+    <button id="button3" style="margin:1em"><span>3</span></button>
+    <button id="button4" style="margin:1em"><span>4</span></button>
+    <button id="button5" style="margin:1em"><span>5</span></button>
+    <button id="button6" style="margin:1em; width: 4em"><span>reset</span></button>
+    <!-- posso cancellare style di div e le ho tutte a sinistra -->
     
+  </div>
+
+  
+  <!-- <div class="left"style="bottom:65px;" >
+    <button id="button2"><span>2:cylinder</span></button>
+  </div>
+  
+  <div class="left"style="bottom:130px;" >
+    <button id="button3"><span>3:altra cosa</span></button>
+  </div>
+  
+  <div class="right">
+    <button id="button4"><span>1:crackshaft</span></button>
+  </div>
+  <div class="right"style="bottom:65px;" >
+    <button id="button5"><span>2:cylinder</span></button>
+  </div>
+  
+  <div class="right"style="bottom:130px;" >
+    <button id="button6"><span>3:altra cosa</span></button>
+  </div> -->
 </body>
