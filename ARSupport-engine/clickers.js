@@ -12,33 +12,33 @@
         btn1.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/crankshaft.glb")     
-            element.setAttribute("scale","50 50 50") 
+            element.setAttribute("scale","250 250 250") 
         })
 
         btn2.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/piston.glb")   
-            element.setAttribute("scale","3 3 3")    
+            element.setAttribute("scale","9 9 9")    
         })
         btn3.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/chain.glb") 
-            element.setAttribute("scale","3 3 3")      
+            element.setAttribute("scale","9 9 9")      
         })
         btn4.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/throttleBody.glb")
-            element.setAttribute("scale","1 1 1")       
+            element.setAttribute("scale","3 3 3")       
         })
         btn5.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/cylinders.glb") 
-            element.setAttribute("scale","1 1 1")      
+            element.setAttribute("scale","3 3 3")      
         })
         btn6.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/scene.gltf") 
-            element.setAttribute("scale","5 5 5")      
+            element.setAttribute("scale","250 250 250")      
         })
     }
 })
