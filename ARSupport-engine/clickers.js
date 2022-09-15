@@ -18,22 +18,22 @@
         btn2.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/piston.glb")   
-            element.setAttribute("scale","0.3 0.3 0.3")    
+            element.setAttribute("scale","1 1 1")    
         })
         btn3.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/chain.glb") 
-            element.setAttribute("scale","0.3 0.3 0.3")      
+            element.setAttribute("scale","1 1 1")      
         })
         btn4.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/throttleBody.glb")
-            element.setAttribute("scale","0.3 0.3 0.3")       
+            element.setAttribute("scale","1 1 1")       
         })
         btn5.addEventListener("click", e => {
                             
             element.setAttribute("gltf-model","https://raw.githubusercontent.com/Bbbgl/ARsupport.github.io/main/ARsupport/assets/devices/animated_engine/cylinders.glb") 
-            element.setAttribute("scale","0.3 0.3 0.3")      
+            element.setAttribute("scale","1 1 1")      
         })
         btn6.addEventListener("click", e => {
                             
